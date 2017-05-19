@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artist Portfolio • Mavo Demos</title>
+  <link rel="stylesheet" href="./css/mavo.css">
+  <link rel="stylesheet" href="./css/portfolio.css">
+  <script src="./js/mavo.js"></script>
+</head>
+<body>
+  <!-- http://mavo.io/demos/portfolio/ -->
+  <main mv-app="portfolio" mv-storage="https://github.com/tannerhodges/mavo-test/public/data/portfolio">
+    <header>
+      <h1>Portfolio</h1>
+    </header>
+
+    <div>
+      <a property="painting" typeof="Painting" mv-multiple mv-attribute="none">
+        <img property="image">
+        <p property="name" mv-default="[readable(to(filename(image), '.'))]"></p>
+      </a>
+    </div>
+  </main>
+</body>
+</html>

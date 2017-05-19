@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mavo</title>
+  <link rel="stylesheet" href="./css/mavo.css">
+  <style>
+  body {
+    padding: 0 1rem 4rem;
+  }
+  main {
+    position: relative;
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+  .mv-bar {
+    position: sticky !important;
+    top: 0;
+  }
+  </style>
+  <script src="./js/mavo.js"></script>
+</head>
+<body>
+  <!-- http://mavo.io/docs/primer/ -->
+
+  <!-- 1 -->
+  <!-- <div mv-app="mavoTest">
+    My first Mavo app!
+  </div> -->
+
+  <!-- 2 -->
+  <!-- <div mv-app="commentform" mv-storage="local" mv-autosave="0">
+    <label>
+      Email:
+      <input type="email" property="email" value="foo@bar.com">
+    </label>
+    <label>
+      Message:
+      <textarea property="message">
+        Edit the form and notice how the values persist after you refresh!
+      </textarea>
+    </label>
+  </div> -->
+
+  <!-- 3 -->
+  <main mv-app="nameDemo" mv-storage="local">
+    <section>
+      <h2>Elements</h2>
+      Name:
+      <span property="firstName">Lea</span>
+      <span property="last_name">Verou</span>
+    </section>
+
+    <section>
+      <h2>Lists + Expressions</h2>
+      Hobbies:
+      <ul>
+        <li property="hobby" mv-multiple>Eating</li>
+      </ul>
+      [count(hobby)] hobbies
+    </section>
+
+    <section>
+      <h2>Complex Lists</h2>
+      <article property="pet" mv-multiple>
+        <h1 property="name">Adam Catlace</h1>
+        Born on
+        <time property="birthday" datetime="2014-06-01">1 Jun 2014</time>
+      </article>
+    </section>
+
+    <section>
+      <h2>Expressions</h2>
+
+      <h3>Percentage</h3>
+      <p>Slider value: [strength/100]</p>
+      <input type="range" property="strength" title="[strength]%">
+
+      <h3>Color</h3>
+      <div style="background-color: [color];">
+        <label>
+          Hue:
+          <input type="range" property="hue" max="360">
+        </label>
+        <label>
+          Saturation:
+          <input type="range" property="saturation">
+        </label>
+        <label>
+          Lightness:
+          <input type="range" property="lightness">
+        </label>
+
+        <input property="color" value="hsl([hue], [saturation]%, [lightness]%)" readonly>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
