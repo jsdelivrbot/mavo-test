@@ -1,7 +1,7 @@
 {
 	"painting": [
 		{
-			"image": "https://cdn.rawgit.com/tannerhodges/mavo-test/2672eabf9d5c81f09e0e732b632f7773e74bc61a/public/data/portfolio/images/2015.04.24-tanner-portrait-by-maxim.jpg",
+			"image": "https://cdn.jsdelivr.net/gh/tannerhodges/mavo-test@2672eabf9d5c81f09e0e732b632f7773e74bc61a/public/data/portfolio/images/2015.04.24-tanner-portrait-by-maxim.jpg",
 			"name": "2015"
 		}
 	]
